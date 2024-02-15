@@ -1,9 +1,10 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { jsonParser } from '../../common';
 import db from '../../data/quizList.json';
 
 import styles from './Quiz.module.scss';
+import { ArrowPrev } from '../../assets';
 
 const Quiz = () => {
   const { id } = useParams();
@@ -13,6 +14,9 @@ const Quiz = () => {
   return (
     <div className={styles.quiz__wrapper}>
       <div className={styles.quiz}>
+        <Link className={styles.quiz__back} to="/">
+          <ArrowPrev />
+        </Link>
         <h1 className={styles.quiz__header}>{name}</h1>
         <span className={styles.quiz__author}>{author}</span>
         <img className={styles.quiz__img} src={img} />

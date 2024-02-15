@@ -84,3 +84,17 @@
   color: $dark;
   transform: scale(1.05);
 }
+
+.quiz__back {
+  position: absolute;
+  left: 20px;
+  top: 35px;
+
+  cursor: pointer;
+
+  transition: 0.3s all ease;
+}
+
+.quiz__back:hover {
+  transform: scale(1.1);
+}
