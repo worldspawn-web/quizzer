@@ -10,9 +10,10 @@ export const RenderQuizzes = () => {
     <>
       {Object.keys(quizzes).map((quizId) => {
         const quiz = quizzes[quizId];
-        const { name, img, link } = quiz;
+        const { name, img, id } = quiz;
+        const newLink = `quiz/${id}`;
         return (
-          <Link to={link} className={styles.quiz__wrapper}>
+          <Link to={newLink} className={styles.quiz__wrapper}>
             <img className={styles.quiz__img} src={img} />
             <p className={styles.quiz__text}>{name}</p>
           </Link>
