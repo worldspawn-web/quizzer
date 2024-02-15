@@ -1,0 +1,35 @@
+@import '../../scss/colors.scss';
+
+.quiz__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 125px;
+  height: 200px;
+
+  transition: 0.3s all ease;
+
+  margin-right: 10px;
+
+  color: $white;
+
+  .quiz__img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 10px;
+  }
+
+  .quiz__text {
+    max-width: 100px;
+
+    font-size: 16px;
+    text-align: center;
+
+    margin-top: 10px;
+  }
+}
+
+.quiz__wrapper:hover {
+  transform: scale(1.1);
+}
