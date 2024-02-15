@@ -21,7 +21,7 @@ export const HomePage = () => {
           </div>
         </div>
         <div className={styles.page__quizzes__updated}>
-          Recently Updated 🔃
+          <span>Recently Updated🔃</span>
           <div className={styles.quizzes__wrapper}>
             <RenderQuizzes />
           </div>
