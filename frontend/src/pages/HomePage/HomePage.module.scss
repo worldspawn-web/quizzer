@@ -1,0 +1,90 @@
+@import '../../scss/colors.scss';
+
+// 480px -> 768px -> 1024px -> 1280px
+
+.page {
+  height: 100%;
+  width: 480px;
+
+  margin: 20px auto;
+  padding-bottom: 10px;
+
+  border-radius: 10px;
+
+  background-color: $darker;
+}
+
+.header__wrapper {
+  height: 75px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: sticky;
+
+  h1 {
+    padding: 20px;
+
+    font-family: 'Archangelsk';
+    font-size: 36px;
+
+    color: $yellow;
+  }
+}
+
+.page__quizzes {
+  height: 100%;
+  width: 90%;
+
+  margin: 10px auto 10px auto;
+
+  border-radius: 10px;
+
+  box-shadow: inset black 0px 0px 30px -12px;
+
+  div {
+    font-family: 'Archangelsk';
+    font-size: 28px;
+    text-decoration: none;
+  }
+}
+
+.page__quizzes__hot {
+  padding: 20px 0 10px 20px;
+
+  span {
+    color: $orange;
+  }
+}
+
+.page__quizzes__new {
+  color: $white;
+
+  padding: 20px 0 10px 20px;
+}
+
+.page__quizzes__updated {
+  color: $white;
+
+  padding: 20px 0 10px 20px;
+}
+
+.quizzes__wrapper {
+  width: 85%;
+
+  margin-top: 20px;
+  padding: 20px 20px 0 20px;
+
+  display: flex;
+  flex-direction: row;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  box-shadow: inset black 0px 0px 30px -12px;
+
+  border-radius: 10px;
+}
