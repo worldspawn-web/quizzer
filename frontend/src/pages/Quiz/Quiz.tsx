@@ -1,15 +1,17 @@
 import { Link, useParams } from 'react-router-dom';
 
 import { jsonParser } from '../../common';
-import db from '../../data/quizList.json';
+import { ArrowPrev } from '../../assets';
 
 import styles from './Quiz.module.scss';
-import { ArrowPrev } from '../../assets';
+import db from '../../data/quizList.json';
 
 const Quiz = () => {
   const { id } = useParams();
   const { quizzes } = jsonParser(db);
   const { name, author, length, img } = quizzes[id];
+
+  const newLink = `/test/${id}`;
 
   return (
     <div className={styles.quiz__wrapper}>
@@ -22,7 +24,9 @@ const Quiz = () => {
         <img className={styles.quiz__img} src={img} />
         <span className={styles.quiz__length}>{length} questions</span>
         <section className={styles.quiz__start}>
-          <a className={styles.quiz__btn}>START</a>
+          <Link className={styles.quiz__btn} to={newLink}>
+            START
+          </Link>
         </section>
       </div>
     </div>
