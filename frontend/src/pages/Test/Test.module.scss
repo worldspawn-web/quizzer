@@ -1,0 +1,79 @@
+@import '../../scss/colors.scss';
+
+.test__wrapper {
+  height: 100%;
+  width: 480px;
+
+  margin: 20px auto;
+
+  background-color: $darker;
+
+  border-radius: 10px;
+}
+
+.test {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.test__img {
+  height: 400px;
+  width: 400px;
+
+  border-radius: 10px;
+  border: 1px solid $yellow;
+
+  margin: 20px auto;
+}
+
+.test__question {
+  font-size: 36px;
+  font-family: 'Archangelsk';
+
+  color: $white;
+
+  max-width: 80%;
+
+  margin: 0 auto;
+}
+
+.test__poll {
+  margin: 20px auto;
+}
+
+.test__variant {
+  height: 50px;
+  width: 50%;
+
+  margin: 5px;
+
+  background-color: transparent;
+
+  font-family: 'Archangelsk';
+  font-size: 24px;
+
+  color: $white;
+
+  border-radius: 10px;
+
+  transition: 0.3s all ease;
+}
+
+.test__variant:hover {
+  transform: scale(1.1);
+
+  border-color: black;
+  background-color: $yellow;
+  color: black;
+}
+
+.test__number {
+  font-family: 'Archangelsk';
+  font-size: 24px;
+
+  color: $disabled;
+}
